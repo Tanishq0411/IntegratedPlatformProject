@@ -9,6 +9,7 @@
   background-color: white;
   height: 100vh;
   width: 100vw;
+  display: flex;
 }
 
 nav{
@@ -17,15 +18,32 @@ nav{
   height: 10vh;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
   z-index: 9999;
+  /* padding: 1rem 1rem; */
+  /* padding-right: 2rem;
+  padding-left: 1rem; */
+}
+
+.btn{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+#btn1{
+  margin-left: 4rem;
+  border-radius: 30rem;
+  height: 8vh;
+  width: 4vw;
 }
 
 .content{
+  /* padding-left: 35vh; */
   padding-top: 15vh;
   height: 85vh;
-  /* background-color: blue; */
+  width: 100vw;
+  background-color: blue;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +57,8 @@ nav{
 }
 
 .card{
-  height: 30vh;
-  width: 15vw;
+  height: 20vh;
+  width: 10vw;
   background-color: white;
   margin: 1rem;
   padding: 2rem;
@@ -56,4 +74,44 @@ nav{
 
 .card:hover{
   box-shadow: .7rem .7rem grey;
+  height: 23vh;
+  width: 12vw;
+}
+
+.Sidebar{
+  width: 35vh;
+  padding-top: 15vh;
+  background-color: red;
+}
+
+.search{
+  /* padding: .7rem; */
+  height: 40%;
+  width: 15%;
+  border: solid black;
+  border-radius: 1rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.inputsearch{
+  padding: .5rem;
+  background-color: white;
+  border: none;
+  width: 95%;
+}
+.searchbtn{
+  background-color: blue;
+  height: 100%;
+  width: 15%;
+  border: none;
+}
+
+.login{
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-right: 1rem;
 }

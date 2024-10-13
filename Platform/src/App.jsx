@@ -10,11 +10,21 @@ function App() {
     <>
       <div className="page">
         <nav>
-          <button>Button1</button>
-          <button>Button2</button>
-          <button>Button3</button>
-          <button>Button4</button>
+          <button className='btn' id='btn1'>LOGO</button>
+          <div className="search">
+            <input className='inputsearch'
+            type="text"
+            placeholder='Search'
+             />
+             <button className="searchbtn"></button>
+            </div>
+          {/* <button className='btn'>Button2</button> */}
+          <button className='login'>Login/ SignUp</button>
         </nav>
+
+        <div className="Sidebar">
+          Content
+        </div>
 
         <div className="content">
 
