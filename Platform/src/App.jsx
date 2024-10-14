@@ -2,6 +2,9 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import Navside from './Components/Navside/Navside'
+import Cards from './Components/Cards/Cards'
+import Admin from './Pages/Admin'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -9,32 +12,10 @@ function App() {
   return (
     <>
       <div className="page">
-        <nav>
-          <button className='btn' id='btn1'>LOGO</button>
-          <div className="search">
-            <input className='inputsearch'
-            type="text"
-            placeholder='Search'
-             />
-             <button className="searchbtn"></button>
-            </div>
-          {/* <button className='btn'>Button2</button> */}
-          <button className='login'>Login/ SignUp</button>
-        </nav>
-
-        <div className="Sidebar">
-          Content
-        </div>
-
-        <div className="content">
-
-          <div className="cardcontainer">
-            <div className="card">CARD1</div>
-            <div className="card">CARD2</div>
-            <div className="card">CARD3</div>
-          </div>
-          
-        </div>
+       
+   <Admin/>
+      
+      
       </div>
     </>
   )

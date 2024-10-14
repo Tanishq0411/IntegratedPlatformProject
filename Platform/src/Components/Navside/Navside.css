@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .page {
+    background-color: white;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+  }
+  
+  nav {
+    background-color: yellow;
+    width: 84%; /* Navbar width */
+    height: 10vh; /* Navbar height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 9999;
+    left: 16%; /* To account for sidebar */
+    padding: 0 1rem;
+  }
+  
+  .search {
+    width: 22%; /* Search bar width */
+    height: 5vh;
+    border: solid black;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .inputsearch {
+    width: 85%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .searchbtn {
+    width: 15%;
+    background-color: blue;
+    border: none;
+    height: 100%;
+  }
+  
+  .login {
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+  }
+  
+  .Sidebar {
+    background-color: red;
+    width: 16%; /* Sidebar width */
+    height: 100vh; /* Sidebar height */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 1rem; /* Reduce padding to align the logo closer to the top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #btn1 {
+    width: 50%;
+    border-radius: 50%; /* Make the logo round */
+    height: 40px; /* Ensure equal height and width for a perfect circle */
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white; /* You can adjust this to match the logo color */
+    overflow: hidden; /* Ensures content stays inside the circle */
+  }
+  
