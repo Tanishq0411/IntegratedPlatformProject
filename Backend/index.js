@@ -13,7 +13,7 @@ const { type } = require("os");
 app.use(bodyParser.json());
 app.use(express.json());
 app.use(cors());
-mongoose.connect("mongodb+srv://shreyanshjanavat:THjOpSxPaffFA47W@cluster0.hjjzae6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
+mongoose.connect("mongodb+srv://collegeproject00000000:iU3qUZJZEWyaSyct@cluster0.4xlkl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0");
 
 const storage=multer.diskStorage({
     destination:'./upload/images',
@@ -29,7 +29,7 @@ app.post("/upload",upload.single('product'),(req,res)=>{
         image_url:`http://localhost:${port}/images/${req.file.filename}`
     })
 })
-//api for teacher message
+
 app.listen(port,(error)=>{
   if(!error){
       console.log("Server is running on port" +port);

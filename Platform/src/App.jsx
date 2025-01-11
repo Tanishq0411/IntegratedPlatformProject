@@ -5,6 +5,7 @@ import './App.css'
 import Navside from './Components/Navside/Navside'
 import Cards from './Components/Cards/Cards'
 import Admin from './Pages/Admin'
+import LoginSignup from './Pages/LoginSignup'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,7 +14,8 @@ function App() {
     <>
       <div className="page">
        
-   <Admin/>
+   {/* <Admin/> */}
+   <LoginSignup/>
       
       
       </div>

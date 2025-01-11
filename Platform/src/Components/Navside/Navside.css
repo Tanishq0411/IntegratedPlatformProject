@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
   }
   
   .page {
@@ -81,3 +82,37 @@
     overflow: hidden; /* Ensures content stays inside the circle */
   }
   
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-toggle {
+    background-color: #f1f1f1; /* Adjust as necessary */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1;
+    min-width: 130px; /* Adjust width as necessary */
+  }
+  
+  .dropdown-item {
+    display: block;
+    padding: 10px;
+    text-align: left;
+    background-color: white;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1; /* Highlight on hover */
+  }

@@ -1,0 +1,25 @@
+/* AI.css */
+
+body {
+    margin: 0; /* Remove default body margin */
+    font-family: Arial, sans-serif; /* Set a clean font */
+    background-color: #f0f0f0; /* Light background color */
+  }
+  
+  .container {
+    display: flex; /* Use Flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 50px;
+    z-index:9999;
+    font-size: 80px;
+
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20rem;
+    padding-left: 30rem;
+}
