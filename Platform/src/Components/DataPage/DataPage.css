@@ -1,0 +1,101 @@
+/* src/Components/DataPage/DataPage.css */
+.data-page {
+    margin-left: 22vw; /* To make room for the Sidebar */
+    padding: 40px 40px 20px; /* Increased padding for a cleaner layout */
+    background-color: #f9f9f9;
+    margin-top: 0vh;
+    color: #333;
+    height: 90vh; /* Full height minus the navbar height */
+    overflow-y: auto;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .data-page h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+  }
+  
+  .data-page p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  .data-page .article-container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .data-page .article-container h2 {
+    font-size: 1.8rem;
+    color: #444;
+    margin-bottom: 10px;
+  }
+  
+  .data-page .video-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .data-page a {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    width: fit-content;
+  }
+  
+  .data-page a:hover {
+    background-color: #007bff;
+    color: white;
+    border-color: #0056b3;
+  }
+  
+  .data-page a:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Add some spacing between the main content and footer */
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    color: #777;
+  }
+  
+  /* Add responsiveness for smaller screens */
+  @media screen and (max-width: 768px) {
+    .data-page {
+      margin-left: 0;
+      padding: 20px;
+    }
+  
+    .data-page h1 {
+      font-size: 2rem;
+    }
+  
+    .data-page p {
+      font-size: 1rem;
+    }
+  
+    .data-page .article-container {
+      padding: 15px;
+    }
+  
+    .data-page a {
+      font-size: 0.9rem;
+    }
+  }
+  

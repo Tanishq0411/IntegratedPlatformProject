@@ -1,0 +1,31 @@
+/* src/Components/Sidebar/Sidebar.css */
+.sidebar {
+    width: 22vw;
+    height: 100vh;
+    background-color: #f4f4f4;
+    padding-top: 20px;
+    position: fixed;
+    top: 10vh; /* Below the Navbar */
+    left: 0;
+    overflow-y: auto;
+  }
+  
+  .sidebar-btn {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    font-size: 1.1rem;
+    border: none;
+    margin: 10px 0;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+    transition: background-color 0.3s;
+    border-radius: 4px;
+  }
+  
+  .sidebar-btn:hover {
+    background-color: #007bff;
+    color: white;
+  }
+  
