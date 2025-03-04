@@ -1,0 +1,32 @@
+/* src/pages/AdminPage.css */
+.admin-page {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-wrapper {
+    position: relative;
+    z-index: 1; /* Ensures the form is above the video background */
+  }
+  
+  .toggle {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .toggle button {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .toggle button:hover {
+    background-color: #2980b9;
+  }
+  

@@ -1,4 +1,4 @@
-/* src/App.css */
+/* src/App.css
 .app-container {
   display: flex;
   flex-direction: column;
@@ -20,3 +20,8 @@
 h2 {
   color: #333;
 }
+.test{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
