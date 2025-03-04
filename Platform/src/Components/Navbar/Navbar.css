@@ -80,22 +80,35 @@
 
 .searchbox {
   display: flex;
-  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 2.2rem;
+  width: 20rem;
+  padding: 0;
 }
 
 .searchbox input {
   padding: 10px;
-  border-radius: 5px;
-  border: 1px solid #ccc;
+  border: none;
+  height: 100%;
+  margin-top: 0;
+  width:18rem;
+  background-color: #fff;
+  color: #333;
 }
 
 .searchbox button {
-  padding: 10px 15px;
+  border-radius: 0px;
   background-color: #ff6347;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
+  height: 100%;
+  width: 6rem;
+  text-align: center;
+  font-size: smaller;
 }
 
 .searchbox button:hover {
@@ -120,15 +133,15 @@
 .search-suggestions {
   margin-left: 35%;
   position: absolute;
-  top: 60px; /* Adjust based on your navbar height */
-  left: 20px;
+  top: 3.1rem; /* Adjust based on your navbar height */
+  left: 1.9rem;
   background-color: #fff;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid black;
+  border-radius: 0px;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
   max-height: 200px;  /* Limit the height */
   overflow-y: auto;   /* Allow scrolling if content exceeds max height */
-  width: 200px; /* Optional, you can adjust the width */
+  width: 15.05rem; /* Optional, you can adjust the width */
   z-index: 1000;
 }
 

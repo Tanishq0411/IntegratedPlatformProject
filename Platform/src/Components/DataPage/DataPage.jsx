@@ -156,6 +156,11 @@ const DataPage = ({ topic }) => {
       <footer>
         <p>Powered by the Learning Platform</p>
       </footer>
+      
+        <button className="postbtn">
+        Create A Post
+        </button>
+     
     </div>
   );
 };

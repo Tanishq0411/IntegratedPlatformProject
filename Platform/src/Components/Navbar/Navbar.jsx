@@ -136,6 +136,7 @@ const Navbar = ({ topicsList }) => {
         <button onClick={handlePopupToggle}>Login/Signup</button>
       </div>
 
+      
       {isPopupVisible && (
         <div className="popup-overlay">
           <div className="popup-content">
