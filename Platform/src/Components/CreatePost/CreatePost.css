@@ -1,0 +1,79 @@
+.create-post-container {
+    margin: 130px auto 20px auto; /* Centered for all screen sizes */
+    max-width: 90%; /* Adjust width for smaller screens */
+    width: 500px; /* Default width */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .label {
+    display: block;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .input-field,
+  .textarea-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  
+  .textarea-field {
+    height: 80px;
+    resize: none;
+  }
+  
+  .submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media screen and (max-width: 600px) {
+    .create-post-container {
+      margin-top: 50px;
+      width: 90%; /* Use more width on small screens */
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 1.3rem;
+    }
+  
+    .input-field,
+    .textarea-field {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  
+    .submit-button {
+      font-size: 0.9rem;
+    }
+  }
+  
