@@ -47,8 +47,8 @@ app.post("/upload", upload.single('product'), (req, res) => {
 //  API for Posting and Fetching Subjects
 app.post("/addsubjects", async (req, res) => {
     try {
-        const { name, webLink, youtubeLink, description } = req.body;
-        const newSubject = new Subject({ name, webLink, youtubeLink, description });
+        const { name, webLink, youtubeLinkHindi,youtubeLinkEnglish, description } = req.body;
+        const newSubject = new Subject({ name, webLink, youtubeLinkHindi,youtubeLinkEnglish, description });
         await newSubject.save();
         res.status(201).json({ success: true, data: newSubject });
     } catch (error) {

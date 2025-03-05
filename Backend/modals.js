@@ -1,22 +1,26 @@
 const mongoose = require("mongoose");
 
-const PostSchema = new mongoose.Schema({
-  username: { type: String, required: true },
-  email: { type: String, required: true, unique: true },
-  topic: { type: String, required: true },
-  link: { type: String, required: true },
-  description: { type: String, required: true },
-  rating: { type: Number, default: 0 }
-}, { timestamps: true });
-
+// ✅ Define Subject Schema
 const SubjectSchema = new mongoose.Schema({
-  name: { type: String, required: true },
-  webLink: { type: String, required: false },
-  youtubeLink: { type: String, required: false },
-  description: { type: String, required: false }
-}, { timestamps: true });
+    name: { type: String, required: true, unique: true },
+    webLink: { type: String },
+    youtubeLinkHindi: { type: String },
+    youtubeLinkEnglish: { type: String },
+    description: { type: String }
+});
 
-const Post = mongoose.model("Data", PostSchema);
 const Subject = mongoose.model("Subject", SubjectSchema);
 
-module.exports = { Data, Subject };
+// ✅ Define Post Schema
+const PostSchema = new mongoose.Schema({
+    username: { type: String, required: true },
+    email: { type: String, required: true },
+    topic: { type: String, required: true },
+    description: { type: String },
+    link: { type: String },
+    rating: { type: Number, min: 0, max: 5 } // Rating should be between 0-5
+});
+
+const Post = mongoose.model("Post", PostSchema);
+
+module.exports = { Subject, Post };
