@@ -7,7 +7,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 const multer = require("multer");
 const path = require("path");
-const { Subject, Post } = require("./models"); // ✅ Import Models
+const { Subject, Post } = require("./modals"); // ✅ Import Models
 
 
 app.use(bodyParser.json());
